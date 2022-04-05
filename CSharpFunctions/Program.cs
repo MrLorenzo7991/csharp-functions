@@ -1,6 +1,7 @@
 ﻿/*----FUNZIONI----*/
 
 int[] arrayDiProva = { 2, 4, 9, 13, 43, 99 };
+int numeroDiProva = 27;
 
 void StampaArray(int[] array)
 {
@@ -12,4 +13,10 @@ void StampaArray(int[] array)
     Console.WriteLine(array[array.Length - 1] + "]");
 }
 
-StampaArray(arrayDiProva);
+int Quadrato(int numero)
+{
+    int numeroAlQuadrato = (int)Math.Pow(numero, 2);
+    return numeroAlQuadrato;
+}
+
+Console.WriteLine(Quadrato(numeroDiProva));
