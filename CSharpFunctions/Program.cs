@@ -19,4 +19,16 @@ int Quadrato(int numero)
     return numeroAlQuadrato;
 }
 
-Console.WriteLine(Quadrato(numeroDiProva));
+int[] ElevaArrayAlQuadrato(int[] array)
+{
+    int[] arrayClonato = (int[])array.Clone();
+    for (int i = 0; i < arrayClonato.Length; i++)
+    {
+        arrayClonato[i] = Quadrato(arrayClonato[i]);
+    }
+    return arrayClonato;
+}
+
+int[] arrayAlQuadrato = ElevaArrayAlQuadrato(arrayDiProva);
+StampaArray(arrayDiProva);
+StampaArray(arrayAlQuadrato);
