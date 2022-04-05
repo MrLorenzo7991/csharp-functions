@@ -29,6 +29,14 @@ int[] ElevaArrayAlQuadrato(int[] array)
     return arrayClonato;
 }
 
-int[] arrayAlQuadrato = ElevaArrayAlQuadrato(arrayDiProva);
-StampaArray(arrayDiProva);
-StampaArray(arrayAlQuadrato);
+int SommaElementiArray(int[] array)
+{
+    int somma = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        somma += array[i];
+    }
+    return somma;
+}
+
+Console.WriteLine(SommaElementiArray(arrayDiProva));
