@@ -1,8 +1,4 @@
 ﻿/*----FUNZIONI----*/
-
-int[] arrayDiProva = { 2, 4, 9, 13, 43, 99 };
-int numeroDiProva = 27;
-
 void StampaArray(int[] array)
 {
     Console.Write("[");
@@ -39,4 +35,16 @@ int SommaElementiArray(int[] array)
     return somma;
 }
 
-Console.WriteLine(SommaElementiArray(arrayDiProva));
+/*---------------ESERCIZIO-----------------*/
+int[] numeri = {2, 6, 7, 5, 3, 9 };
+StampaArray(numeri);
+
+int[] numeriAlQuadrato = ElevaArrayAlQuadrato(numeri);
+StampaArray(numeriAlQuadrato);
+StampaArray(numeri);
+
+int sommaNumeri = SommaElementiArray(numeri);
+Console.WriteLine(sommaNumeri);
+
+int sommaNumeriAlQuadrato = SommaElementiArray(numeriAlQuadrato);
+Console.WriteLine(sommaNumeriAlQuadrato); 
